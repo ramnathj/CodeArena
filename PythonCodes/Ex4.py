@@ -1,6 +1,8 @@
 '''
 Generate list and tuple
 '''
+
+
 class Generate(object):
     def __init__(self,s):
         self.s=s

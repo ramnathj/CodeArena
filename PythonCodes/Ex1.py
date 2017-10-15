@@ -1,7 +1,8 @@
-class Ex1(object) :
-    def __init__(self,lower,upper):
-        self.lower = lower
-        self.upper = upper
+
+class Ex1(object):
+    def __init__(self, lowerBound, upperBound):
+        self.lower = lowerBound
+        self.upper = upperBound
         self.lst = []
 
     def compute(self):

@@ -1,6 +1,8 @@
 '''
 Sort strings in lexicographic order
 '''
+
+
 class Sorting(object):
 
     def __init__(self,lst):

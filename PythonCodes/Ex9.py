@@ -2,6 +2,7 @@
 Capitalize Sentences and Print
 '''
 
+
 class Capitalize(object):
 
     def __init__(self,s):
@@ -9,6 +10,7 @@ class Capitalize(object):
 
     def convert(self):
         return self.s.upper()
+
 
 s = raw_input()
 while s :

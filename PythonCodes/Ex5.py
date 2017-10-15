@@ -2,6 +2,7 @@
 Convert String to UpperCase
 '''
 
+
 class String(object):
     def __init__(self):
         self.s=""

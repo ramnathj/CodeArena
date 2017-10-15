@@ -2,6 +2,7 @@
 2-D Array
 '''
 
+
 class Matrix(object):
 
     def __init__(self,x,y):
@@ -16,6 +17,7 @@ class Matrix(object):
                 lst.append(i*j)
             self.mat.append(lst)
         return self.mat
+
 
 X = input('Enter the number of rows : ')
 Y = input('Enter the number of columns : ')
