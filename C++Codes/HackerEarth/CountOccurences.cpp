@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 
-#define sz 10007
+#define sz 50000
 
 using namespace std;
 
@@ -44,11 +44,13 @@ struct Node* createNode( char* s ) {
 
 int computeHash( char* s ) {
 	
-	int i, sum = 0;
+	unsigned long int hash = 5381;
+
 	for( i = 0;s[ i ];i++ ) {
-		sum = ( sum + ( s[ i ] * 10 + i + 1 ) ) % sz;
+		hash = ( ( hash << 5 ) + hash ) + s[ i ];
 	}
-	return sum;
+	hash = hash % sz;
+	return hash;
 }
 
 void insertNode( struct Node** hMap, char* s ) {
