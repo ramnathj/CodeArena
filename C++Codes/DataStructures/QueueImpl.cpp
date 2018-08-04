@@ -38,7 +38,7 @@ struct Queue dequeue( struct Queue Q ) {
 struct Point frontElement( struct Queue Q ) {
 	
 	if( !isEmpty( Q ) ) {
-		return A[ Q.front ];
+		return Q.A[ Q.front ];
 	}
 	struct Point P = {-1, -1};
 	return P;
